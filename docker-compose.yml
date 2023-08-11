@@ -18,7 +18,7 @@ services:
     build:
       context: ./backend
       dockerfile: ./Dockerfile
-    image: node-react-backend
+    image: nodejs
     restart: always
     environment:
       TZ: America/Sao_Paulo
@@ -33,7 +33,7 @@ services:
     build:
       context: ./frontend
       dockerfile: ./Dockerfile
-    image: node-react-frontend
+    image: reactjs
     restart: always
     environment:
       TZ: America/Sao_Paulo
